@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>DÄR BEKVÄMLIGHET MÖTER MODERN STIL</h1>
+        <h1>DÄR BEKVÄMLIGHET MÖTER MODERN STIL.</h1>
         <AppointmentForm />
       </div>
     </section>
