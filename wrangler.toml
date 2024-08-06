@@ -7,6 +7,10 @@ workers_dev = true
 command = "npm run build"
 upload = { format = "service-worker", dir = ".next" }
 
+[site]
+bucket = ".next"
+entry-point = "functions"
+
 [[routes]]
 pattern = "barbermobile.se/*"
 script = "barbermobile"

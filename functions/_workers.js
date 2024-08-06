@@ -9,7 +9,10 @@ async function handleRequest(event) {
   try {
     const page = await getAssetFromKV(event, {
       mapRequestToAsset: req => {
-        return mapRequestToAsset(req);
+        // serve a different file if `index.html` is requested
+        req.url = new URL(req.url)
+        req.url.pathname = req.url.pathname === '/' ? '/index.html' : req.url.pathname
+        return mapRequestToAsset(req)
       }
     });
     return new Response(page.body, page);
