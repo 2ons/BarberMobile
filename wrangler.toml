@@ -1,0 +1,12 @@
+name = "barbermobile"
+type = "javascript"
+account_id = "e0e41e0086c2f25ee4fc1ecb3da8973e"
+workers_dev = true
+
+[build]
+command = "npm run build"
+upload = { format = "service-worker", dir = ".next" }
+
+[[routes]]
+pattern = "barbermobile.se/*"
+script = "barbermobile"
