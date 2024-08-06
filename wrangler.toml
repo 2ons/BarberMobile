@@ -12,5 +12,5 @@ bucket = ".next"
 entry-point = "functions"
 
 [[routes]]
-pattern = "barbermobile.se/*"
+pattern = "87a5de2b.barbermobile.pages.dev/*"
 script = "barbermobile"
