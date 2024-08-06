@@ -1,6 +1,6 @@
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/', 
+  basePath: '', 
   distDir: '.next', 
 }
 
